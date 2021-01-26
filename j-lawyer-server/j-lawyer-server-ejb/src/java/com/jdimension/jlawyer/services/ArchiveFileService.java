@@ -1247,6 +1247,7 @@ public class ArchiveFileService implements ArchiveFileServiceRemote, ArchiveFile
 
         String id = idGen.getID().toString();
         dto.setId(id);
+        dto.setRootFolder(null);
 
         List<ArchiveFileAddressesBean> addresses = dto.getArchiveFileAddressesBeanList();
         if (addresses != null) {
@@ -1664,6 +1665,7 @@ public class ArchiveFileService implements ArchiveFileServiceRemote, ArchiveFile
         }
 
         dto.setId(id);
+        dto.setRootFolder(null);
 
         List<ArchiveFileAddressesBean> addresses = dto.getArchiveFileAddressesBeanList();
         if (addresses != null) {
